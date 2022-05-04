@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+
+<body>
+
+    <h1> Mi Primer Formulario</h1>
+
+    <h4>Autor: <i>Velazquez Salgado Eduardo Jesus</i></h4>
+
+
+    <p>
+        Este formulario esta realizado con la finalidad de obtener los datos basicos de una persona, el cual es el
+        primer formulario que involucra la mayoria de atributos para los mismos en HTML5. Se realiza con al finalidad de
+        practicar todo lo aprendido sobre el tema de formularios.
+    </p>
+
+    <form action="" autocomplete="off">
+        <fieldset>
+            <legend><b>Datos personales y de contacto: </b></legend>
+            <label for="name">Nombre´s: </label>
+            <input type="text" name="name" id="name" autofocus required><br><br>
+            <label for="last name">Apellidos :</label>
+            <input type="text" name="last name" id="last name" placeholder="  Apellido paterno">
+            <label for="last name"></label>
+            <input type="text" name="last name" id="last name" placeholder="  Apellido materno"><br><br>
+            <label for="Cumpleaños">Fecha de Nacimiento: </label>
+            <input type="date" name="cumpleaños" id="Cumpleaños"><br><br>
+            <label for="tel">Numero telefonico: </label>
+            <input type="tel" name="tel" id="tel" placeholder="10 digitos" required maxlength="10"> <br><br> 
+            <label for="CURP">CURP: </label>
+            <input type="text" name="CURP" id="CURP" maxlength="18" placeholder="18 caracteres"><br>
+            <label for="">Si ha olivado su CURP <a href="https://www.gob.mx/curp/" target="_blank">Click aqui</a></label><br><br>
+            <label for="email">Correo electronico: </label>
+            <input type="text" name="email" id="email" placeholder="Usuario" required>
+            <select name="correo" id="correo">
+                <option value="@">@</option>
+                <option value="gmail">gmail</option>
+                <option value="hotmail">hotmail</option>4
+                <option value="outlook">outlook</option>4
+                <option value="alumno.mx">alumno.mx</option>4
+            </select><br><br>
+            <label for="edad">Edad: </label>
+            <input type="number" name="edad" id="edad" min="15" max="30" placeholder="18-30"><br><br>
+            <label for="sexo">Sexo: </label>
+            <label for="h">Hombre</label>
+            <input type="radio" name="sexo" id="h" checked>
+            <label for="m">Mujer</label>
+            <input type="radio" name="sexo" id="m"><br><br>
+
+            <input type="checkbox" name="terminos" id="terminos">
+            <label for="terminos">Declaro haber leido las condiciones generales del programa y la normativa sobre
+                proteccion de datos.</label><br>
+            <input type="checkbox" name="ofertas" id="ofertas" checked>
+            <label for="ofertas">Deseo recibier informacion sobre novedades y ofertas</label><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Datos generales de Ubicacion </legend>
+            <label for="paises">Pais de origen: </label>
+            <select name="pais" id="pais">
+                <option value="Mexico" selected>Selecciona el pais</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Chile">Chile</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Mexico">España</option>
+                <option value="Alemania">Portugal</option>
+                <option value="Chile">Japon</option>
+                <option value="Argentina">China</option>
+                <option value="Mexico">Tokyo</option>
+                <option value="Alemania">Rusia</option>
+                <option value="Chile">Inglaterra</option>
+                <option value="Argentina">Canada</option>
+                <option value="Mexico">Francia</option>
+                <option value="Alemania">Italia</option>
+                <option value="Chile">Brasil</option>
+                <option value="Argentina">Estados Unidos</option>
+            </select>
+            <label for="direc">Estado: </label>
+            <select name="Estado" id="Estado">
+                <option value="Estado">Selecciona el estado</option>
+                <option value="Estado">Aguascalientes</option>
+                <option value="Estado">Colima</option>
+                <option value="Estado">Estado de Mexico</option>
+                <option value="Estado">Durango</option>
+                <option value="Estado">Ciudad de Mexico</option>
+                <option value="Estado">Sinaloa</option>
+                <option value="Estado">Nuevo Leon</option>
+                <option value="Estado">Guadalajara</option>
+                <option value="Estado">Yucatan</option>
+                <option value="Estado">Tamaulipas</option>
+                <option value="Estado">Veracruz</option>
+                <option value="Estado">Chihuahua</option>
+                <option value="Estado">Sonora</option>
+                <option value="Estado">Baja california Sur</option>
+                <option value="Estado">Baja california Norte</option>
+                <option value="Estado">Morelia</option>
+            </select><br><br>
+            <label for="direccion">Especifica tu direccion: </label>
+            <input type="text" name="direccion" id="direccion">
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Interes y gustos</legend>
+        </fieldset><br>
+
+        <label for="especificaciones">Agrega un comentario para mejorar tu la experiencia: </label><br><br>
+        <textarea name="especificaciones" id="" cols="30" rows="10">
+        </textarea><br><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+
+
+</body>
+
+</html>
